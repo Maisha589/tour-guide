@@ -1,11 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import NavigationBar from './Components/NavigationBar/NavigationBar';
+import Home from './Pages/Home/Home/Home';
+import Footer from './Pages/Shared/Footer/Footer';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
     <div>
-      <h2>This is home</h2>
-      <NavigationBar></NavigationBar>
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home></Home>}>Home</Route>
+
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }

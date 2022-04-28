@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Tour to Bangladesh",
+        "price": "$600",
+        "description": "Bangladesh is my motherland. I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 30days.",
+        "img": "https://i.ibb.co/kGgx9gR/sabbir-ahmed-Av-GCGMMu9-XU-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tour to India",
+        "price": "$600",
+        "description": "Bangladesh is my motherland. I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 30days.",
+        "img": "https://i.ibb.co/MfH1TDP/sylwia-bartyzel-e-U4pip-U-8-HA-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tour to Nepal",
+        "price": "$600",
+        "description": "Bangladesh is my motherland. I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 30days.",
+        "img": "https://i.ibb.co/MPSwtNF/sergey-pesterev-dstd4-Do-LQ90-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tour to Indonesia",
+        "price": "$600",
+        "description": "Bangladesh is my motherland. I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 30days.",
+        "img": "https://i.ibb.co/zJvgRyC/harry-kessell-e-E2tr-Mn-6a0-unsplash.jpg"
+    }
+]
