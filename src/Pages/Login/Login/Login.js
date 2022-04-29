@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -20,9 +23,18 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+        auth
+    );
 
+    if (loading) {
+        return <Loading></Loading>
+    }
 
-
+    let errorElement;
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error.message}</p>
+    }
 
     if (user) {
         navigate(from, { replace: true });
@@ -34,6 +46,17 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         signInWithEmailAndPassword(email, password);
+    }
+
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast("sent");
+        }
+        else {
+            toast("Please Enter Your Email");
+        }
     }
 
     const goToRegister = event => {
@@ -55,14 +78,14 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+                {errorElement}
                 <Button variant="warning" type="submit">
                     Submit
                 </Button>
                 <p className='mt-5'>New to my FunGuide? <Link to='/register' onClick={goToRegister} className='text-primary pe-auto text-decoration-none'>Please Register</Link></p>
+                <p className='mt-5'>Forget password? <button onClick={resetPassword} className='btn btn-link text-primary pe-auto text-decoration-none'>Reset password</button></p>
             </Form>
+            <ToastContainer />
         </div >
     );
 };
