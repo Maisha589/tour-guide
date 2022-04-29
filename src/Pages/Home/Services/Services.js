@@ -15,7 +15,7 @@ const Services = () => {
         <div style={{
             backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
         }}>
-            <h2>My Services</h2>
+            <h2 className='text-center'>My Services</h2>
             <div className='row col-lg-6 col-md-4 col-sm-12 m-auto g-5'>
                 {
                     services.map(service => <Service
