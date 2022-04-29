@@ -12,7 +12,7 @@ const Services = () => {
     }, [])
 
     return (
-        <div style={{
+        <div id='services' style={{
             backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
         }}>
             <h2 className='text-center'>My Services</h2>
