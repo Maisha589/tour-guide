@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Service = ({ service }) => {
     const { id, name, price, img, description } = service;
@@ -15,7 +15,7 @@ const Service = ({ service }) => {
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{description}.</p>
                 <p className="card-text">{price}.</p>
-                <button onClick={() => handleServiceDEtail(id)} to='/' className='btn btn-primary'>Process Booking</button>
+                <Link to='/service' onClick={() => handleServiceDEtail(id)} className='btn btn-primary'>Process Booking</Link>
             </div>
         </div >
     );
