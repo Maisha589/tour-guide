@@ -1,16 +1,29 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const Register = () => {
 
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+
     const navigate = useNavigate();
 
     const goToLogin = event => {
         navigate("/login");
+    }
+    if (user) {
+        navigate('/');
     }
 
     const handleRegister = event => {
@@ -18,7 +31,7 @@ const Register = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
-        console.log(email, password);
+        createUserWithEmailAndPassword(email, password);
     }
 
     return (
@@ -44,7 +57,7 @@ const Register = () => {
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
                 <Button variant="warning" type="submit">
-                    Submit
+                    Register
                 </Button>
                 <p className='mt-5'>Already have an account? <Link to='/login' onClick={goToLogin} className='text-primary pe-auto text-decoration-none'>Go to Login</Link></p>
             </Form>
