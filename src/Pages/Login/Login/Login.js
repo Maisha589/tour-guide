@@ -1,10 +1,49 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { Button, Form } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+    const navigate = useNavigate();
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+
+        console.log(email, password);
+    }
+
+    const goToRegister = event => {
+        navigate('/register');
+    }
+
     return (
-        <div>
-            <h2>This is login</h2>
-        </div>
+        <div style={{
+            backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
+        }}>
+            <h2 className='text-center p-5 mb-5'>Login to Book my service</h2>
+            <Form onSubmit={handleSubmit} className='m-auto w-50 border border-warning p-5 border-5'>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+                <Button variant="warning" type="submit">
+                    Submit
+                </Button>
+                <p className='mt-5'>New to my FunGuide? <Link to='/register' onClick={goToRegister} className='text-primary pe-auto text-decoration-none'>Please Register</Link></p>
+            </Form>
+        </div >
     );
 };
 
