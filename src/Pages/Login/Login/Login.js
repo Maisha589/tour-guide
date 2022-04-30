@@ -23,7 +23,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(
         auth
     );
 
@@ -67,8 +67,8 @@ const Login = () => {
         <div style={{
             backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
         }}>
-            <h2 className='text-center p-5 mb-5'>Login to Book my service</h2>
-            <Form onSubmit={handleSubmit} className='m-auto w-50 border border-warning p-5 border-5'>
+            <h2 className='text-center pt-5 mb-5 text-warning'>Login to Book my service</h2>
+            <Form onSubmit={handleSubmit} className='m-auto w-50 border border-warning p-5 border-3'>
                 <Form.Group className="mb-3" controlId='fromBasicEmail'>
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -79,13 +79,14 @@ const Login = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
                 {errorElement}
-                <Button variant="warning" type="submit">
-                    Submit
+                <Button className='fw-bold' variant="warning" type="submit">
+                    Login
                 </Button>
                 <p className='mt-5'>New to my FunGuide? <Link to='/register' onClick={goToRegister} className='text-primary pe-auto text-decoration-none'>Please Register</Link></p>
                 <p className='mt-5'>Forget password? <button onClick={resetPassword} className='btn btn-link text-primary pe-auto text-decoration-none'>Reset password</button></p>
             </Form>
             <ToastContainer />
+            <h3 className='text-center p-5 m-0 text-warning'> Your fun guide is here !!</h3>
         </div >
     );
 };

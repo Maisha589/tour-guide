@@ -11,8 +11,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h2 className='fw-bold text-dark'>Welcome to Fun guide.</h2>
+                    <p className='fw-bold'>I am Lara an a tourist guide. Looking for a tour guide? You are in the right place. </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -23,8 +23,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h2 className='fw-bold text-dark'>Fun with Lara</h2>
+                    <p className='fw-bold'>I have visited 20 countries in this world, still counting. I would love to be a guide for you to explore some country in Asia. </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -35,8 +35,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h2 className='fw-bold text-dark'>A guide and a partner!!</h2>
+                    <p className='fw-bold'>Traveling alone? No worry! I will be your exploring partner and your guide. </p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

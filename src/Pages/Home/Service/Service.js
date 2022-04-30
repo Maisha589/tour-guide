@@ -9,13 +9,13 @@ const Service = ({ service }) => {
         navigate(`/service/${id}`)
     }
     return (
-        <div className="card m-3" style={{ width: "20rem" }}>
+        <div className="card m-3 p-0" style={{ width: "20rem" }}>
             <img src={img} className="card-img-top w-100" alt="..." />
             <div className="card-body">
-                <h5 className="card-title">{name}</h5>
+                <h5 className="card-title">Tour to <span className='text-warning fw-bold'>{name}</span></h5>
                 <p className="card-text">{description}.</p>
-                <p className="card-text">{price}.</p>
-                <Link to='/service' onClick={() => handleServiceDEtail(id)} className='btn btn-primary'>Process Booking</Link>
+                <p className="card-text fw-bold">{price}.</p>
+                <Link to='/service' onClick={() => handleServiceDEtail(id)} className='btn btn-warning fw-bold'>Process Booking</Link>
             </div>
         </div >
     );
