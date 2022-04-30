@@ -9,6 +9,7 @@ const Service = ({ service }) => {
         navigate(`/service/${id}`)
     }
     return (
+        // Service Card data
         <div className="card m-3 p-0" style={{ width: "20rem" }}>
             <img src={img} className="card-img-top w-100" alt="..." />
             <div className="card-body">

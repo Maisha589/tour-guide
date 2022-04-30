@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
 
@@ -27,10 +28,11 @@ const Login = () => {
         auth
     );
 
+    // showing spinner
     if (loading) {
         return <Loading></Loading>
     }
-
+    // showing error
     let errorElement;
     if (error) {
         errorElement = <p className='text-danger'>Error: {error.message}</p>
@@ -84,6 +86,7 @@ const Login = () => {
                 </Button>
                 <p className='mt-5'>New to my FunGuide? <Link to='/register' onClick={goToRegister} className='text-primary pe-auto text-decoration-none'>Please Register</Link></p>
                 <p className='mt-5'>Forget password? <button onClick={resetPassword} className='btn btn-link text-primary pe-auto text-decoration-none'>Reset password</button></p>
+                <SocialLogin></SocialLogin>
             </Form>
             <ToastContainer />
             <h3 className='text-center p-5 m-0 text-warning'> Your fun guide is here !!</h3>
