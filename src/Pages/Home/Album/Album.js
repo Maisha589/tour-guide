@@ -16,6 +16,7 @@ const Album = () => {
     return (
         <div className='container' id='album'>
             <h2 className='text-center pt-5 fs-2 fw-bold text-warning'>Album</h2>
+            <br />
             <h3 className='text-center pt-5 fs-2 fw-bold text-warning'>Photos of my guided tour!!</h3>
             <div className='row'>
                 <div className='col-4'>
