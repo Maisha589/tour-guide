@@ -13,10 +13,8 @@ const About = () => {
                 <div className='m-5 p-5'>
                     <h2><span className='text-center fs-2 fw-bold m-3 text-warning'>Goals</span></h2>
                     <p>I will be a full stack web developer</p>
-                    <p>I will be an Computer Science engineer</p>
-                    <p>I will learn at least 3 languages apart from Bangala and English</p>
-                    <p>I will read at least 30 books in every year.</p>
-                    <p className='mb-5'>I will travel the world .</p>
+                    <p>I will learn at least 1 languages apart from Bangala and English</p>
+                    <p>I will read at least 30 books in 2022.</p>
                     <h2><span className='text-center fs-2 m-3 fw-bold text-warning'>For Achieving my goals</span></h2>
                     <p>I am giving my priority, time and my mind in IT field.</p>
                     <p>Hard work is the core of success.</p>
