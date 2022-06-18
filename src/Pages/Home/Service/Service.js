@@ -10,7 +10,7 @@ const Service = ({ service }) => {
     }
     return (
         // Service Card data
-        <div className="card m-3 p-0" style={{ width: "20rem" }}>
+        <div className="card p-3 mx-2" style={{ width: "20rem" }}>
             <img src={img} className="card-img-top w-100" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Tour to <span className='text-warning fw-bold'>{name}</span></h5>

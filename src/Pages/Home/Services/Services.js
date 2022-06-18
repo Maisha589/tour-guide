@@ -12,17 +12,17 @@ const Services = () => {
     }, [])
 
     return (
-        <div id='services' style={{
-            backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
-        }}>
-            <h2 className='text-center pt-5 fs-2 fw-bold text-warning'>My Services</h2>
-            <div className='row col-lg-4 col-md-6 col-sm-12 m-auto g-5'>
+        <div id='services'>
+            <h2 className='container text-center pt-5 pb-5 fs-2 fw-bold text-warning'>My Services</h2>
+            <div className='d-flex justify-content-start align-items-center flex-wrap'>
+                {/* <div className=' '> */}
                 {
                     services.map(service => <Service
                         key={service.id}
                         service={service}
                     ></Service>)
                 }
+                {/* </div> */}
             </div>
         </div>
     );

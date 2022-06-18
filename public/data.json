@@ -3,42 +3,28 @@
         "id": 1,
         "name": "Bangladesh",
         "price": "$500",
-        "description": "Bangladesh is my motherland. I will guide you to visit beautiful and significant places in this country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 30days.",
+        "description": "Bangladesh is my motherland. I will guide you to visit beautiful and significant places in this country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 30days...................",
         "img": "https://i.ibb.co/kGgx9gR/sabbir-ahmed-Av-GCGMMu9-XU-unsplash.jpg"
     },
     {
         "id": 2,
         "name": "India",
         "price": "$600",
-        "description": "India is a place of beauty. I will guide you to visit beautiful and significant places in this country. I will manage your stay at low cost. I will be your partner throughout your stay in India for 15days.",
+        "description": "India is a place of beauty. I will guide you to visit beautiful and significant places in this country. I will manage your stay at low cost. I will be your partner throughout your stay in India for 15days......................",
         "img": "https://i.ibb.co/MfH1TDP/sylwia-bartyzel-e-U4pip-U-8-HA-unsplash.jpg"
     },
     {
         "id": 3,
         "name": "Nepal",
         "price": "$600",
-        "description": "Nepal is known as a tourist country. I will guide you to visit beautiful and significant places in ths country. Will experience adventure here. I will manage your stay at low cost. I will be your partner throughout your stay in Nepal for 15days.",
+        "description": "Nepal is known as a tourist country. I will guide you to visit beautiful and significant places in ths country. Will experience adventure here. I will manage your stay at low cost. I will be your partner, your stay in Nepal for 15days.",
         "img": "https://i.ibb.co/MPSwtNF/sergey-pesterev-dstd4-Do-LQ90-unsplash.jpg"
     },
     {
         "id": 4,
-        "name": "Indonesia",
-        "price": "$800",
-        "description": "Most beautiful places are here.I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Indonesia for 15days.",
-        "img": "https://i.ibb.co/zJvgRyC/harry-kessell-e-E2tr-Mn-6a0-unsplash.jpg"
-    },
-    {
-        "id": 5,
         "name": "Korea",
         "price": "$1000",
         "description": "Want to know about K-pop culture. Let's visit Korea together. I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Bangladesh for 15days.",
         "img": "https://i.ibb.co/Vx60vvZ/seoul-tower-pink-cherry-blossom-sakura-season-spring-seoul-south-korea.jpg"
-    },
-    {
-        "id": 6,
-        "name": "Japan",
-        "price": "$1200",
-        "description": "Sakura season is coming. I will guide you to visit beautiful and significant places in ths country. I will manage your stay at low cost. I will be your partner throughout your stay in Japan for 16days.",
-        "img": "https://i.ibb.co/sm48ztq/yasaka-pagoda-sannen-zaka-street-kyoto-japan.jpg"
     }
 ]
