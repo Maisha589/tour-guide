@@ -15,14 +15,12 @@ const Services = () => {
         <div id='services'>
             <h2 className='container text-center pt-5 pb-5 fs-2 fw-bold text-warning'>My Services</h2>
             <div className='d-flex justify-content-start align-items-center flex-wrap'>
-                {/* <div className=' '> */}
                 {
                     services.map(service => <Service
                         key={service.id}
                         service={service}
                     ></Service>)
                 }
-                {/* </div> */}
             </div>
         </div>
     );

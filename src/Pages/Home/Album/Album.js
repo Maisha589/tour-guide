@@ -1,17 +1,4 @@
 import React from 'react';
-import img1 from '../../../image/img-1.jpg';
-import img2 from '../../../image/img-2.jpg';
-import img3 from '../../../image/img-3.jpg';
-import img4 from '../../../image/img-4.jpg';
-import img5 from '../../../image/img-5.jpg';
-import img6 from '../../../image/img-6.jpg';
-import img7 from '../../../image/img-7.jpg';
-import img8 from '../../../image/img-8.jpg';
-import img9 from '../../../image/img-9.jpg';
-import img10 from '../../../image/img-10.jpg';
-import img11 from '../../../image/img-11.jpg';
-import img12 from '../../../image/img-12.jpg';
-import img13 from '../../../image/img-13.jpg';
 const Album = () => {
     return (
         <div className='container' id='album'>
@@ -21,47 +8,47 @@ const Album = () => {
             <div className='row'>
                 <div className='col-4'>
                     <div className="row mb-3 mt-5">
-                        <img className='img-fluid' src={img1} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/zrtrK4j/bd-1.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img2} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/gMMc16w/n-2-1.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img9} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/CJ67hbm/k-2.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img10} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/SNNVRLz/img-10-1.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img11} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/P6gjVdB/in2.jpg" alt="" />
                     </div>
                 </div>
                 <div className='col-4'>
                     <div className="row mb-3 mt-5">
-                        <img className='img-fluid' src={img3} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/g9FFZv3/img-3-1-1-1.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img4} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/R2wHpth/img-4.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img5} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/5cW0syw/img-5.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img12} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/jVVPyfw/img-12.jpg" alt="" />
                     </div>
                 </div>
                 <div className='col-4'>
                     <div className="row mb-3 mt-5">
-                        <img className='img-fluid' src={img6} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/WVdVj36/img-6-1.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img7} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/RNYJtwf/img-7.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img8} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/C29GTKs/img-8.jpg" alt="" />
                     </div>
                     <div className="row mb-3">
-                        <img className='img-fluid' src={img13} alt="" />
+                        <img className='img-fluid' src="https://i.ibb.co/QYvLkPL/img-13.jpg" alt="" />
                     </div>
                 </div>
             </div>
