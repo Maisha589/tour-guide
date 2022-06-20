@@ -4,8 +4,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
@@ -88,7 +87,7 @@ const Login = () => {
                 <p className='mt-5'>Forget password? <button onClick={resetPassword} className='btn btn-link text-primary pe-auto text-decoration-none'>Reset password</button></p>
                 <SocialLogin></SocialLogin>
             </Form>
-            <ToastContainer />
+            
             <h3 className='text-center p-5 m-0 text-warning'> Your fun guide is here !!</h3>
         </div >
     );

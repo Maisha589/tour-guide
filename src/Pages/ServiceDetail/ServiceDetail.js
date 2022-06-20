@@ -1,13 +1,22 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 const ServiceDetail = () => {
+
+    const handleSubmit = event => {
+        event.preventDefault();
+        toast("Your booking is confirmed. I will contact soon.")
+    }
+
     return (
-        <div style={{
-            backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
-        }}>
+        <div
+        // style={{
+        //     backgroundImage: `url("https://i.ibb.co/NTTdcjm/bg.jpg")`
+        // }}
+        >
             <h2 className='text-center pt-5 mb-5 text-warning'>Confirm your booking</h2>
-            <Form className='m-auto w-50 border border-warning p-5 border-5'>
+            <Form onSubmit={handleSubmit} className='m-auto mb-5 w-50 border border-warning p-5 border-5'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="name" placeholder="Enter name" required />
@@ -33,7 +42,6 @@ const ServiceDetail = () => {
                     Confirm Booking
                 </Button>
             </Form>
-            <h3 className='text-center p-5 m-0 text-warning'> Thanks for your booking. Will contact soon!! </h3>
         </div >
     );
 };
